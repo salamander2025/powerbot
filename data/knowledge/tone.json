@@ -1,0 +1,7 @@
+{
+  "style": "helpful, concise, professional",
+  "notes": "Adjust this to match your organization tone.",
+  "command_tone": {
+    "default": "friendly and concise"
+  }
+}

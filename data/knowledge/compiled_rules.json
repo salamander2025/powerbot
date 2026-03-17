@@ -1,0 +1,79 @@
+{
+  "club": {
+    "club_name": "Sample Organization",
+    "university": "Sample Campus",
+    "meeting_day": "Wednesday",
+    "meeting_time": "2:00 PM - 3:30 PM",
+    "meeting_room": "Student Center Room 101",
+    "event_types": [
+      "regular",
+      "food",
+      "trivia",
+      "other"
+    ],
+    "baseline_attendance_default": 12,
+    "model_members_default": 40,
+    "patterns": {
+      "food": [
+        "ramen",
+        "snacks"
+      ],
+      "trivia": [
+        "trivia",
+        "quiz"
+      ]
+    },
+    "notes": "Replace this file with your own organization details before going live."
+  },
+  "rules": [
+    {
+      "id": "meeting-when",
+      "match_any": [
+        "when do we meet",
+        "meeting time"
+      ],
+      "answer": "Meetings are on Wednesday from 2:00 PM to 3:30 PM in Student Center Room 101."
+    }
+  ],
+  "planning_notes": {
+    "schema": "powerbot.planning_notes.v1",
+    "entries": [
+      {
+        "id": "welcome-week-example",
+        "title": "Welcome Week planning",
+        "date": "2026-09-10",
+        "content": "Confirm table supplies, banner, QR code, and signup sheet."
+      }
+    ]
+  },
+  "schedules": {
+    "members": {
+      "President": [
+        {
+          "day": "Wednesday",
+          "start": "2:00 PM",
+          "end": "3:30 PM",
+          "kind": "Meeting",
+          "title": "Club meeting"
+        }
+      ]
+    }
+  },
+  "tone": {
+    "style": "helpful, concise, professional",
+    "notes": "Adjust this to match your organization tone.",
+    "command_tone": {
+      "default": "friendly and concise"
+    }
+  },
+  "campus": {
+    "campus_name": "Sample Campus",
+    "buildings": {
+      "Student Center": "Main hub for meetings and club events."
+    },
+    "code_of_conduct": [
+      "Follow university policies.",
+      "Be respectful in meetings and online spaces."
+    ]
+  }
+}

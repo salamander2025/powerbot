@@ -1,0 +1,12 @@
+{
+  "rules": [
+    {
+      "id": "meeting-when",
+      "match_any": [
+        "when do we meet",
+        "meeting time"
+      ],
+      "answer": "Meetings are on Wednesday from 2:00 PM to 3:30 PM in Student Center Room 101."
+    }
+  ]
+}

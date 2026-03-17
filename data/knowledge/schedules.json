@@ -1,0 +1,13 @@
+{
+  "members": {
+    "President": [
+      {
+        "day": "Wednesday",
+        "start": "2:00 PM",
+        "end": "3:30 PM",
+        "kind": "Meeting",
+        "title": "Club meeting"
+      }
+    ]
+  }
+}

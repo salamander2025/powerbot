@@ -1,0 +1,7 @@
+discord.py>=2.3.2
+python-dotenv>=1.0.0
+
+# Optional quality-of-life dependencies (bot still runs without these)
+loguru>=0.7.2
+cerberus>=1.3.5
+APScheduler>=3.10.4

@@ -1,0 +1,10 @@
+{
+  "campus_name": "Sample Campus",
+  "buildings": {
+    "Student Center": "Main hub for meetings and club events."
+  },
+  "code_of_conduct": [
+    "Follow university policies.",
+    "Be respectful in meetings and online spaces."
+  ]
+}

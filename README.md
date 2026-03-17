@@ -1,0 +1,82 @@
+# PowerBot
+
+PowerBot is a plug-and-play Discord assistant for clubs and organizations: tasks, events, dashboards, and (optional) local AI.
+
+## 🚀 Quick Start
+
+1. Install **Python 3** (on Windows, installing from the Microsoft Store is fine).
+2. Create a Discord bot in the **Discord Developer Portal** and copy its **token**.
+3. In the Developer Portal, enable **Message Content Intent** (required).
+4. Make a copy of `.env.example` and rename the copy to `.env`
+5. Open `.env` (it’s a text file)
+6. Paste your token after `DISCORD_TOKEN=` (no quotes)
+7. Save the file
+8. Invite the bot to your server (steps below)
+9. Double-click `start.bat`
+
+## 🧩 Create the Discord bot (token)
+
+1. Go to the Discord Developer Portal: `https://discord.com/developers/applications`
+2. Click **New Application** → name it → create.
+3. In the left sidebar, open **Bot**.
+4. Click **Reset Token** (or **Copy**) and save it somewhere safe.
+
+## ✅ Enable Message Content Intent (required)
+
+1. In the Developer Portal → your application → **Bot**
+2. Scroll to **Privileged Gateway Intents**
+3. Turn on **Message Content Intent**
+4. Click **Save Changes**
+
+If you see `PrivilegedIntentsRequired`, this setting is the fix.
+
+## 🔗 Invite the bot to your server
+
+1. In the Developer Portal → your application → **OAuth2** → **URL Generator**
+2. Under **Scopes**, check **bot**
+3. Under **Bot Permissions**, check:
+   - **Send Messages**
+   - **Read Message History**
+4. Copy the generated URL, open it in your browser, then choose your server and click **Authorize**
+
+## 🔑 Setup (.env)
+
+Open `.env` and set:
+
+- `DISCORD_TOKEN`: your Discord bot token (required)
+
+Optional (recommended later):
+
+- `POWERBOT_OWNER_ID`: your Discord user ID for owner-only commands
+- `POWERBOT_OWNER_ROLE_ID`: optional Discord role ID for owner-only commands
+- `AI_BACKEND`: `ollama` (default) or `none`
+
+## 🤖 Optional AI setup (Ollama)
+
+PowerBot can run AI locally (no API key) using Ollama:
+
+1. Install Ollama from `https://ollama.com`
+2. In a terminal, run:
+
+```bash
+ollama pull llama3.1
+```
+
+If Ollama isn’t installed/running, the bot still works (AI features will be limited).
+
+## 🧠 Example commands
+
+- `!help`
+- `!examples`
+- `!pb my tasks`
+- `!pb add task for Treasurer to confirm budget by Friday high priority`
+- `!pb add event welcome night on Sept 10 at Student Center`
+- `!pb dashboard`
+
+## 📦 What this bot includes
+
+- Task system (owners, priorities, due dates, status)
+- Event tracking + dashboards
+- Meeting utilities (summaries / action-item import)
+- Optional local AI backend (Ollama)
+- Local data storage under `data/` (config + knowledge + logs)

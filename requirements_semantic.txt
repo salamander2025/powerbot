@@ -1,0 +1,3 @@
+# Semantic Q&A (optional)
+sentence-transformers>=2.6.0
+faiss-cpu; platform_system != "Windows"

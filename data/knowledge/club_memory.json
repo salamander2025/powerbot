@@ -1,0 +1,26 @@
+{
+  "club_name": "Sample Organization",
+  "university": "Sample Campus",
+  "meeting_day": "Wednesday",
+  "meeting_time": "2:00 PM - 3:30 PM",
+  "meeting_room": "Student Center Room 101",
+  "event_types": [
+    "regular",
+    "food",
+    "trivia",
+    "other"
+  ],
+  "baseline_attendance_default": 12,
+  "model_members_default": 40,
+  "patterns": {
+    "food": [
+      "ramen",
+      "snacks"
+    ],
+    "trivia": [
+      "trivia",
+      "quiz"
+    ]
+  },
+  "notes": "Replace this file with your own organization details before going live."
+}

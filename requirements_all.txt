@@ -1,0 +1,3 @@
+-r requirements.txt
+-r requirements_semantic.txt
+-r requirements_analytics.txt

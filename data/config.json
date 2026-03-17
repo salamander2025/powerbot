@@ -1,0 +1,77 @@
+{
+  "total_members": 40,
+  "base_attendance": 12,
+  "last_updated": "2026-01-01",
+  "forecast": {
+    "min_attendance": 5,
+    "max_attendance_factor": 1.25
+  },
+  "multipliers": {
+    "event_type": {
+      "regular": 1.0,
+      "trivia": 1.1,
+      "karaoke": 0.95,
+      "food": 1.2,
+      "other": 1.0
+    },
+    "context": {
+      "finals": 0.75,
+      "midterms": 0.9,
+      "rain": 0.9,
+      "normal": 1.0
+    }
+  },
+  "ai_backend": "ollama",
+  "ai_model": "llama3.1",
+  "ai_auto_enable": true,
+  "ai_enabled": false,
+  "ai_private_active": false,
+  "private_consult_active": false,
+  "private_consult_owner_id": "",
+  "default_log_channel_id": 0,
+  "antispam_enabled": true,
+  "antispam_notify_channel_id": 0,
+  "antispam_notify_channel": "default-log",
+  "antispam_exempt_channel_ids": [],
+  "antispam_window_seconds": 10,
+  "antispam_max_msgs_in_window": 7,
+  "antispam_duplicate_threshold": 2,
+  "antispam_links_window_seconds": 30,
+  "antispam_max_links_in_window": 3,
+  "antispam_alert_cooldown_seconds": 120,
+  "antispam_action": "notify",
+  "antispam_timeout_minutes": 10,
+  "channels": {
+    "announcements": 0,
+    "rules": 0,
+    "e-board": 0,
+    "default-log": 0
+  },
+  "bot_channels": {},
+  "voice_channels": {},
+  "budget_total": 1000,
+  "public_autoresponse_enabled": false,
+  "version": "1.0.0",
+  "relay_enabled": false,
+  "relay_control_guild_id": 0,
+  "relay_control_user_id": 0,
+  "relay_target_guild_id": 0,
+  "relay_target_channel_id": 0,
+  "relay_control_channel_id": 0,
+  "activity_tracking_enabled": true,
+  "activity_default_days": 7,
+  "exports_keep_files": 20,
+  "backups_keep_files": 5,
+  "owner_hints": [
+    "President",
+    "Treasurer",
+    "Secretary",
+    "Vice President"
+  ],
+  "known_events": [
+    "welcome-week",
+    "general-meeting",
+    "social",
+    "workshop"
+  ]
+}

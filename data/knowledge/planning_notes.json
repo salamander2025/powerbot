@@ -1,0 +1,11 @@
+{
+  "schema": "powerbot.planning_notes.v1",
+  "entries": [
+    {
+      "id": "welcome-week-example",
+      "title": "Welcome Week planning",
+      "date": "2026-09-10",
+      "content": "Confirm table supplies, banner, QR code, and signup sheet."
+    }
+  ]
+}
